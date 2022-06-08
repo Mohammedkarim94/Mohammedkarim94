@@ -130,7 +130,7 @@ resource "aws_eip" "static_eip" {
 
 
 resource "aws_ecr_repository" "mekkarim_ecr" {
-  name                 = "karimrepo"
+  name                 = "karimr"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {
