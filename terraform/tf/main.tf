@@ -129,3 +129,11 @@ resource "aws_eip" "static_eip" {
 }
 
 
+resource "aws_ecr_repository" "mekkarim_ecr" {
+  name                 = "catdogrepo"
+  image_tag_mutability = "MUTABLE"
+
+  image_scanning_configuration {
+    scan_on_push = true
+  }
+} 
