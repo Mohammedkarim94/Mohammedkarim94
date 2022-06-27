@@ -30,7 +30,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: catdogrepo
-        IMAGE_TAG: cats
+        IMAGE_TAG: cats01
       run: |
         cd cats
         ls -ltra
